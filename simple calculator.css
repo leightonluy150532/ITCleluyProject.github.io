@@ -1,0 +1,201 @@
+/*body*/
+body{
+background-color: bisque;
+justify-content: center;
+display: flex-start;
+}
+h1 {
+    text-align: center;
+}
+.documents{
+    display: center;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 500px;
+    padding: 5%;
+    margin-top: 20px;
+    border-radius: 4em;
+
+}
+.input-container{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input {
+    font-size: 1em;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+    max-width: 200px;
+    color: #333; 
+    
+}
+.input:hover {
+    outline: none;
+    border: .5px solid #1a73e8;
+    padding: 1em;
+    transition: 0.1s;
+} 
+.input:focus {
+    outline: none;
+    border: 2.5px solid #1a73e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.input::placeholder {
+    color: #999;
+}  
+
+/* Optional: Animation on focus */
+@keyframes input-focus {
+    from {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+  
+    to {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .input:focus {
+    animation: input-focus 0.3s ease;
+  }
+  
+/* div 2 */
+.performOperation {
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    margin:auto;
+    margin-bottom: 20px ;
+    width: 500px;
+    border-radius: 25px;
+    background-color: burlywood;
+}
+/*a*/
+ #showall
+{
+    display: inline-block;
+    margin: 0 1%;
+    padding: 3%;
+    border-radius: 11%;
+    -webkit-box-shadow: 0 3px 12px 3px rgba(0,0,0,0,2);
+    -moz-box-shadow: 0 3px 12px 3px rgba(0,0,0,0,2);
+    box-shadow: 0 3px 12px 3px rgba(0,0,0,0,2);
+}
+
+#btnfactorial
+{
+    width: 5em;
+    height: 2em;
+    border: 2px  #ffffff;
+    border-radius: 20px;
+    transition:  0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550px;
+}
+#btnfactorial:hover
+{
+  background-color: #614105;
+  color: white;
+  font-size: 1.5em;
+  border-color: #867f7f;
+  transition:  0.3s;
+  box-shadow: 0 0 0 3px #8f8e8eb7;
+ 
+}
+#btnSum 
+{
+    background-color: white;
+    border-radius: 20px;
+    font-size: 1em;
+    width: 4em;
+    height:2em;
+    border: black;
+    display: right;
+    border-width: 10px;
+    border-top: 120px;
+    color: black;
+    transition: 0.33s;
+}
+#btnSum:hover 
+{
+    background-color: #f3ffbd;
+    box-shadow: 0 0 0 2px #8f8e8eb7;
+    font-size: 30px;
+    color: rgb(0, 0, 10);
+}
+.btnSum:active{
+    background-color: white;
+    transition: 0.1s;
+    color:burlywood;
+}
+#btnaverage {
+    
+    background-color: white;
+    border-radius: 20px;
+    padding:15px;
+    border: black;
+    display: right;
+    border-width: 10px;
+    border-top: 120px;
+    color: black;
+    transition: 0.33s;
+}
+#btnaverage:hover 
+{
+    background-color: #4aff03;
+    box-shadow: 0 0 0 3px #363c465f;
+    color: #030000;
+    font-size: 30px;
+}
+.btnSum:active{
+    background-color: black ;
+    transition: 0.1s;
+    color:burlywood;
+}
+.result
+{
+background-color: white;
+padding: 20px 15px;
+position: center;
+text-align: center;
+max-width: 500px;
+margin: auto;
+border-radius: 20px;
+}
+.clear
+{
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    font: arial;
+  
+}
+.clear:hover
+{
+    background-color: #c42323;
+    box-shadow: 0px 15px 20px rgba(6, 1, 15, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+.clear:active
+{
+    transform: translateY(-1px);
+}

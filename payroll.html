@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll ITC</title>
+    <link rel="stylesheet" href="payroll.css">
+</head>
+<body> 
+    <section> 
+        <div class="background-color">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div> 
+    </section>
+    <section class="formsection">
+        <div class="forms">
+            <h1>Employee forms</h1>
+            <div class="inputforms">  
+                <div class="Nameform">
+                    <label for="Name">Name:</label>
+                    <input class="inputform" id="Name" type="text" placeholder="Enter Name">
+                </div>
+                <br>
+                <label for="daysworked">Dayswork:</label>
+                <input class="inputform" id="daysworked" type="number" placeholder="Input days work">
+                <br>
+                <label for="dailyrate">Daily Rate:</label>
+                <input class="inputform" id="dailyrate" type="number" placeholder="Enter daily rate">
+                <br>
+                <label for="deductionAmount">Deduction:</label>
+                <input class="inputform" id="deductionAmount"type="number" placeholder="Deduction">
+                <section>
+                    <button id="btnadd">Add => Table</button>
+                </section>
+            </div>    
+        </div>
+    </section>
+    <section class="tablesection">
+        <div class="tablecontents">
+            <h1>Payslip</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Employee Name</th>
+                        <th>Days Worked</th>
+                        <td>Daily Rate</td>
+                        <td>DeductionAmount</th>
+                        <th id="grosspay">Gross Pay</th>
+                        <th id="netpay">Net Pay</th>
+                    </tr>
+                </thead> 
+                <tbody id="tablebody"></tbody>
+                <tfooter>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfooter>  
+            </table>
+            <br><br>
+            <label class="inputline" for="items">Total:</label>
+            <input id="items" type="number" readonly></input>
+
+            <label class="inputline" for="delitems">Delete item:</label>
+            <input id="delitem" type="number"></input>
+            <button id="btndelete">Delete</button>
+            <br><br>
+            <button id="DeleteAll">DeleteAll</button>
+        </div>
+    </section> 
+    <dialog id="dlgConfirmCancel">
+        <form method="dialog">     
+                <div class="card">
+                    <div class="bg">
+                        <h4 id="dlgmsg">Are you sure to delete row?</h4>   
+                        <button id="btnConfirm" value="confirm" >Confirm</button>
+                        <button id="btnCancel" value="cancel" >Cancel</button>  
+                    </div>  
+                    <div class="blob"></div>
+                </div>
+        </form>        
+    </dialog>
+    
+    <dialog id="dlgAreYouSure">
+        <form method="dialog">
+            <div class="card">
+                <div class="bg">
+                    <h4 id="dlgmsg">Are you sure?</h4>   
+                    <button id="btnYes" value="yes">Yes</button>
+                    <button id="btnNo" value="no" >No</button>
+                </div>
+                <div class="blob"></div>
+           </div>
+        </form>
+    </dialog> 
+
+    <script src="payroll.js" type="text/javascript"></script>   
+</body>
+</html>
+
+

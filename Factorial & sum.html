@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <link href="simple calculator.css" rel="stylesheet"> 
+</head>
+<body>
+    
+    <h1>Simple Calculations using for-loop, while-loop, and do</h1>
+    <div class ="performOperation">
+        <button id="showAllbtn" onclick="showAll()">Show All</button>
+        <button id="btnfactorial" onclick="showFactorial()">Factorial</a>
+        <button id="btnSum" onclick="showSum()">Sum </a>
+        <button id="btnaverage" onclick="showAverage()">Average</a>
+        <button class="clear" > <li><a href="frontpagefolder/frontpage.html">HOME</a></button>
+    </div>
+    <section>
+        <div id="Factorial" id="documents" class="documents">
+            <h3>Factorial</h3>
+            <section>
+                <div class="input-container">
+                <input class="input" id="input_factorial" type="number" placeholder="Enter input here"> 
+                <div class="highlight"></div>  
+                </div>
+            </section>
+            <input id="result_factorial" class="result" type="number" readonly>
+            <button class="compute" onclick="computeFactorial()">Compute</button>
+            <button class="clear" id="delete_factorial">Clear</button>
+        </div>
+        <div id="Sum" class="documents"> 
+            <h3>Sum</h3> 
+            <section>
+                <div class="input-container">
+                <input class="input" id="inputsum" type="number" placeholder="Enter input here"> 
+                <div class="highlight"></div> 
+                </div>
+            </section>
+            <input id="sumresult" class="result" type="number" readonly>
+            <button class="compute" onclick="computeSum()">Compute</button>
+            <button class="clear" id="DeleteSum">Clear</button>
+        </div>
+        <div id="Average" class="documents"> 
+            <h3>Average </h3>
+            <section>
+                <div class="input-container">
+                <input class="input" id="inputaverage" type="number" placeholder="Enter input here">  
+                <div class="highlight"></div> 
+                </div>
+            </section>
+            <input id="averageresult" class="result" type="number" readonly>
+            <button class="compute" onclick="computeAverage()">Compute</button>
+            <button class="clear" id="DeleteAverage">Clear</button>
+        </div>
+    </section>
+
+<script src="calculator.js"></script>   
+</body>
+</html>

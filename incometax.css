@@ -1,0 +1,145 @@
+.income {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: alic;
+    padding: 20px;
+    min-width: 500px;
+    min-height: 30px;
+    margin: auto;
+    border-radius: 20px;    
+}
+body 
+{
+    background-color:  #a3d4ff;
+    position: relative;
+    justify-content: center;
+
+}
+h1{
+    text-align: center;
+}
+.result
+{
+    background-color: white;
+    padding: 5%;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 30px;
+}
+#income
+{
+    border: solid 1.5px #080808;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #1b1717;
+}
+#income:hover
+{
+    outline: none;
+    border: 1.5px solid #1a73e8;
+    padding: 5%;
+    transition: 0.1s;
+}
+#incometax_result
+{
+    border: solid 1.5px #080808;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #1b1717;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.incometax
+{
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1); 
+}
+.buttons
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#computeincometax{
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#computeincometax:hover{
+    color: black;
+}
+#computeincometax:after{
+content: "";
+background: white;
+position: absolute;
+z-index: -1;
+left: -20%;
+right: -20%;
+top: 0;
+bottom: 0;
+transform: skewX(-45deg) scale(0, 1);
+transition: all 0.5s;
+}
+#computeincometax:hover::after
+{
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+transition: all 0.5s;
+}
+#Clear
+{
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#Clear:hover
+{
+    color: black;
+}
+#Clear:after
+{
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+#Clear:hover:hover:after{
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+ }

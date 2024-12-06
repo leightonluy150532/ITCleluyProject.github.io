@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+}
+body{
+    min-width: 500px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.bottomAnim{
+    border: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2851A6 url(spmUM.gif) left repeat-x;
+    background-size: auto 65%;
+    background-position: bottom;
+    z-index: 1000;
+}
+.dropdownmenu ul, .dropdownmenu li{
+    margin: 0; 
+    padding: 0;
+}
+.dropdownmenu ul{
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+.dropdownmenu li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+.dropdownmenu a{
+    background: #30a6e6 ;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    padding: 15px 220px;
+    text-align:center ;
+}
+.dropdownmenu li:hover a{
+    background: #34495e; 
+}
+.submenu{
+    left:0;
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul.submenu{
+    opacity: 1;
+    top: 45px;
+    visibility: visible;
+
+}
+.submenu li {
+    float: none;
+    width: 100%;
+}
+#submenu li:hover a{
+    background-color: #ffee00;
+    color: black;
+}
+
+#submenu a{
+    background-color: #34495e ;
+}
+header{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width:250px ;
+    height: 200px;
+}
+
+.content{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content  h1{
+    padding-left: 10px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 2.2px;
+    line-height: 40px;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bottomAnim {
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 65%;
+  background-position: bottom;
+  z-index: 1000;
+}
+h1, p{
+    color: white;
+}
+#footer{
+   margin-top: 300px;
+   margin-left: 650px;
+}

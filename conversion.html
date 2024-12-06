@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Metric Conversion</title>
+    <link href="conversion.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="mainbody">
+            <div class="conversion">
+                <h1> Conversion calculator </h1>
+                <h2>Celsius to Fahrenheit</h2>
+                <label for="Celsius">Convert to fahrenheit: </label>
+                <input id="Celsius" name="c1" type="number">
+                <button id="compute_to_fahrenheit">Convert to fahrenheit</button>
+                <button id="clear_fahrenheit">Clear</button>
+            </div>
+        <div class="result">
+            <label for="result">Result: </label>
+            <input id="fahrenheit result" name="fahren_result" type="number" readonly>      
+        </div>
+        <div class="conversion">
+            <h2>Fahrenheit to celsius</h2>
+            <label for="fa_to_C">Convert to Celsius:</label>
+            <input id="fahren-to-celsius" name="c2" type="number">
+            <button id="compute_to_celsius">Convert to Celsius</button>
+            <button id="clear_celsius">Clear</button>
+        </div>
+        <div class="result">
+            <label for="Celsius-result">Result:</label>
+            <input id="Celsius_result" name="Result-to-Celsius" type="number" readonly>
+        </div>
+        <div class="conversion">
+            <h2>Meters to feet</h2>
+            <label for="Feet">Convert to feet:</label>
+            <input id="meters" name="convert to feet" type="number">
+            <button id="compute_to_feet">Compute to feet</button>
+            <button id="clear_feet">Clear</button>
+        </div>
+        <div class="result">
+            <label for="result to feet">Result:</label>
+            <input id="result to feet" name="result to feet" type="number" readonly>    
+        </div>     
+       
+        <div class="conversion">
+            <h2>Feet to meters </h2>
+            <label for="feet to meters">Convert to meters</label>
+            <input id="feet" name="convert to meters" type="number">
+            <button id="compute_to_meters">Compute to feet</button>
+            <button id="clear_meters">Clear</button>
+        </div>
+        <div class="result">
+            <label for="result to meters">Result:</label>
+            <input id="result to meter" name="result to meter" type="number" readonly>   
+        </div>
+       
+    </div>    
+    <script src="conversion.js"></script>
+</body>
+</html> 
